@@ -1,0 +1,47 @@
+
+
+.body {
+     background-color: rgb(44, 29, 29);
+}
+p {
+    font-size: 30px;
+}
+
+#yes {
+    color: white;
+
+}
+#character1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+#character2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+#character3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(114, 116, 23);
+}
+#character4 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+
+}
+.jedi {
+    width: 100px;
+    height: 100px;
+    background-color:rgb(0, 255, 255);
+}
+
+#jedi2 {
+    width: 100px;
+    height: 100px;
+    background-color:rgb(217, 255, 0);
+    visibility: hidden;
+}
