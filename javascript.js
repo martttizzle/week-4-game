@@ -4,15 +4,14 @@ $(document).ready(function () {
     var button = $("#attack");
 
     //selecting the player
-    $("#jedi1, #jedi, #sith, #sith1").on("click", function () {
+    $("#jedi, #jedi1, #sith, #sith1").on("click", function () {
         $(this).css("border", "dashed 8px darkgreen");
-        $("#jedi1").css("visibility", "hidden").css("position", "absolute").css("top", "140px").css("right", "455px").css("background-color", "red").css("visibility", "visible");
-        $("#sith").css("visibility", "hidden").css("position", "absolute").css("top", "140px").css("right", "435px").css("background-color", "red").css("visibility", "visible");
-        $("#sith1").css("visibility", "hidden").css("position", "absolute").css("top", "140px").css("right", "425px").css("background-color", "red").css("visibility", "visible");
+
+        $("#jedi1").addClass("jedi1NC");
+        $("#sith").addClass("jediNC");
+        $("#sith1").addClass("jedi2NC");
         $(button).html("<button type='button'>ATTACK</button>");
     });
-
-
 
 });
 
@@ -22,8 +21,6 @@ var jedi = {
     Health: 100,
     Damage: 10,
     location: $("#jedi"),
-    
-
 };
 var jedi1 = {
     firstName: "Obi-Wan ",
@@ -31,8 +28,6 @@ var jedi1 = {
     Health: 100,
     Damage: 10,
     location: $("#jedi1"),
-   
-
 };
 var sith = {
     firstName: "Darth",
@@ -51,4 +46,8 @@ var sith1 = {
 
 };
 
-alert(jedi.firstName);
+
+
+var people =[jedi,jedi1,sith,sith1];
+
+var a   = people[3].firstName;
